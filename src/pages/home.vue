@@ -32,7 +32,9 @@
       </div>
       <div>
         <draggable @start="start" @end="end">
-          <p v-for="item in list" :key="item.id">{{item.name}}</p>
+          <transition-group tag="div">
+            <div class="pull-item" v-for="item in list" :key="item.id">{{item.name}}</div>
+          </transition-group>
         </draggable>
       </div>
     </div>
@@ -75,16 +77,16 @@ export default {
         value: '46以上'
       }],
       list: [{
-        name: 'John',
+        name: '组件一',
         id: 1
       }, {
-        name: 'Joao',
+        name: '组件二',
         id: 2
       }, {
-        name: 'Jean',
+        name: '组件三',
         id: 3
       }, {
-        name: 'Gerard',
+        name: '组件四',
         id: 4
       }]
     }
@@ -159,6 +161,17 @@ export default {
         border: 1px solid red;
         transition: border .8s;
       }
+    }
+    .pull-item {
+      width: 100px;
+      height: 50px;
+      margin: 10px 0;
+      padding: 0 20px;
+      background: cornflowerblue;
+      border-radius: 8px;
+      line-height: 50px;
+      color: cornsilk;
+      cursor: pointer;
     }
   }
 }
