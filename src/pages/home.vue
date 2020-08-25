@@ -31,7 +31,7 @@
         </div>
       </div>
       <div>
-        <draggable>
+        <draggable @start="start" @end="end">
           <p v-for="item in list" :key="item.id">{{item.name}}</p>
         </draggable>
       </div>
@@ -92,6 +92,12 @@ export default {
   methods: {
     pull () {
       this.isShow = !this.isShow
+    },
+    start (e) {
+      console.log(e)
+    },
+    end (e) {
+      console.log(e)
     }
   },
   components: {
