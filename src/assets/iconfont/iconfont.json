@@ -1,0 +1,16 @@
+{
+  "id": "1991174",
+  "name": "text_project",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "一个用来测试的项目",
+  "glyphs": [
+    {
+      "icon_id": "12714775",
+      "name": "下 拉",
+      "font_class": "xiala",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
