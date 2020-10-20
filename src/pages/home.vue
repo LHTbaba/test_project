@@ -30,12 +30,15 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="content">
         <draggable @start="start" @end="end">
           <transition-group tag="div">
             <div class="pull-item" v-for="item in list" :key="item.id">{{item.name}}</div>
           </transition-group>
         </draggable>
+      </div>
+      <div class="bottom">
+        <router-link :to="{ name: 'test' }">进入测试页</router-link>
       </div>
     </div>
   </div>
@@ -162,16 +165,21 @@ export default {
         transition: border .8s;
       }
     }
-    .pull-item {
-      width: 100px;
-      height: 50px;
-      margin: 10px 0;
-      padding: 0 20px;
-      background: cornflowerblue;
-      border-radius: 8px;
-      line-height: 50px;
-      color: cornsilk;
-      cursor: pointer;
+    .content {
+      .pull-item {
+        width: 100px;
+        height: 50px;
+        margin: 10px 0;
+        padding: 0 20px;
+        background: cornflowerblue;
+        border-radius: 8px;
+        line-height: 50px;
+        color: cornsilk;
+        cursor: pointer;
+      }
+    }
+    .bottom {
+
     }
   }
 }
