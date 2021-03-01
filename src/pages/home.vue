@@ -120,11 +120,10 @@ export default {
   color: #888888;
   .test-panel {
     width: 80%;
-    height: 500px;
+    padding: 30px;
     background: #eeeeee;
     border-radius: 15px;
     .select-panel {
-      margin-top: 50px;
       display: flex;
       justify-content: space-around;
       .select-item {

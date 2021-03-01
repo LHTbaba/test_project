@@ -6,6 +6,27 @@
   "description": "一个用来测试的项目",
   "glyphs": [
     {
+      "icon_id": "13525440",
+      "name": "返 回",
+      "font_class": "fanhui-copy-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12347850",
+      "name": "筛 选",
+      "font_class": "shaixuan",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "13468164",
+      "name": "方块列表 2",
+      "font_class": "fangkuailiebiao",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
       "icon_id": "12714775",
       "name": "下 拉",
       "font_class": "xiala",

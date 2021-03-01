@@ -19,13 +19,15 @@ export default {
 @import '../src/assets/iconfont/iconfont.css'
 </style>
 
-<style lang='less' scoped>
+<style rel="stylesheet/" lang='less' scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  width: 100%;
-  height: 100%;
+    /deep/ p {
+    margin: 0;
+    padding: 0;
+  }
 }
 </style>

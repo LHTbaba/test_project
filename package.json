@@ -11,11 +11,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "echarts": "4.9.0",
     "element-ui": "^2.13.2",
     "less": "^3.12.2",
     "less-loader": "4.1.0",
+    "particles.js": "^2.0.0",
     "vue": "^2.5.2",
     "vue-meta": "^2.4.0",
+    "vue-particles": "^1.0.9",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.24.1"
   },
